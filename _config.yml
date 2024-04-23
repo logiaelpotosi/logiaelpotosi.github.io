@@ -6,9 +6,9 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: JekyllOrg
-description: a free Jekyll theme for organizations and non-profits
-baseurl: "/JekyllOrg" # the subpath of your site, e.g. /blog
+title: Gran Logia el Potosí
+description: 
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://damianeoloan.github.io" # the base hostname & protocol for your site
 
 # Profiles
