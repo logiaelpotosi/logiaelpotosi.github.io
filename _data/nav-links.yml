@@ -1,12 +1,10 @@
-- title: About
+- title: Acerca de Nosotros
   url: /about/
-- title: Issues
+- title: Directorio de Logias
   url: /issues/
-- title: Services
-  url: /services/
-- title: News
+- title: Noticias
   url: /blog/index.html
-- title: Events
+- title: Eventos
   url: /events/
-- title: Resources
+- title: Recursos
   url: /resources/
