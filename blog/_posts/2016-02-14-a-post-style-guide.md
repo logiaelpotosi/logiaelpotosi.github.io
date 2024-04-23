@@ -2,6 +2,8 @@
 layout: post
 title:  La marcha del aprendiz, su significado y su interpretación
 date:   2024-04-08
+author: "Daniel Rosillo"
+categories: Quick
 ---
 Es indudable que todo movimiento que se inicia, por los propios medios de que dispone el hombre, para trasladarse de un lugar a otro, debe ejecutarse en determinado orden, a la vez que de una manera FIRME y SEGURA;  consecuentemente, resulta que la vida de todos los seres racionales, debe sujetarse a un régimen o sistema de procedimientos, adecuados a sus usos y costumbres, con el fin de no DETENER o INTERRUMPIR su MARCHA, por la senda del bienestar y progreso humanos.
 
