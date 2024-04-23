@@ -1,7 +1,7 @@
 ---
 layout: event
 start-date: 2024-04-22 18:00
-end-date: 2024-04-22 12:00 # optional
+end-date: 2024-04-22 20:00 # optional
 locations:
   - name: 1 Random Ave, Cardiff # optional
     latitude: 51.484039
