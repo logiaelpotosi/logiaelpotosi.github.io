@@ -1,10 +1,10 @@
-- title: Acerca de Nosotros
-  url: /about/
-- title: Catálogo de Logias
-  url: /issues/
 - title: Noticias
   url: /blog/index.html
+- title: Catálogo de Logias
+  url: /issues/
 - title: Eventos
   url: /events/
 - title: Recursos
   url: /resources/
+- title: Acerca de Nosotros
+  url: /about/
