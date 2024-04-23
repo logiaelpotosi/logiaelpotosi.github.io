@@ -58,3 +58,22 @@ $on-desktop:       1020px;
         "layout",
         "syntax-highlighting"
 ;
+.site-header {
+    display: flex;
+    justify-content: flex-end; /* Alinea el contenido a la derecha */
+    align-items: center; /* Alinea verticalmente el contenido */
+  }
+  
+  .menu {
+    margin-right: 20px; /* Margen derecho para separar el menú del borde de la ventana */
+  }
+  
+  .nav-container {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos del menú a la derecha */
+  }
+  
+  .nav-link {
+    margin-left: 20px; /* Espacio entre cada enlace del menú */
+  }
