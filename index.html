@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Inicio
+title: Home
 ---
 <!-- Homepage feature -->
 <div class="home">
@@ -26,7 +26,7 @@ title: Inicio
   <section id="homepage-news">
     <ul class="post-list">
       <a href="{{ '/blog/index.html' | prepend: site.baseurl }}" title="{{ site.title | prepend: 'Latest News from ' }}">
-        <h2 class="home-header">Últimas Entradas</h2>
+        <h2 class="home-header">Latest News</h2>
       </a>
       {% for post in site.posts | limit:3 %}
       <li>
@@ -47,17 +47,46 @@ title: Inicio
           <p>{{ post.excerpt | truncatewords: 30 }}</p>
         </a>
 
-        <a href="{{ post.url | prepend: site.baseurl }}" class="index-button">Leer</a>
+        <a href="{{ post.url | prepend: site.baseurl }}" class="index-button">read on...</a>
       </li>
       {% endfor %}
     </ul>
 
+    <a href="{{ '/blog/index.html' | prepend: site.baseurl }}" title="{{ site.title | prepend: 'Latest News from ' }}" class="button">See All News</a>
+  </section><!-- End homepage news selection -->
+  <!-- Homepage services selection -->
+  <section id="services-container" class="homepage-services">
+    <a href="{{ '/services' | prepend: site.baseurl }}" title="{{ site.title | append: ' Services' }}">
+      <h2 class="home-header">Services</h2>
+    </a>
+    <ul class="grid-container">
+      {% for service in site.services limit:3 %}
+      <a href="{{ service.url | prepend: site.baseurl }}">
+        {% if forloop.length <= 2 %}
+        <li class="one-whole col">
+        {% else %}
+        <li class="one-third col{% if forloop.last == true %} final-col{% endif %}">
+        {% endif %}
+          <div class="tn-container">
+            <img src="{{ 'services-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{  }}" />
+            <div class="mask"></div>
+            <div class="text-box">
+              <h1>{{ service.title }}</h1>
+              {% if service.description %}<p>{{ service.description }}</p>{% endif %}
+            </div>
+          </div>
+        </li>
+      </a>
+      {% endfor %}
+
+      <a href="{{ '/services' | prepend: site.baseurl }}" title="{{ site.title | prepend: 'See All ' | append: ' Services' }}" class="button home-button">See All Services</a>
+    </ul>
   </section><!-- End homepage services selection -->
   <!-- Homepage events selection -->
   <section id="homepage-events">
     <ul class="events-index">
       <a href="{{ '/events' | prepend: site.baseurl }}" title="{{ site.title | append: ' Events' }}">
-        <h2 class="home-header">Eventos</h2>
+        <h2 class="home-header">Events</h2>
       </a>
       {% for event in site.events limit:3 %}
       <a href="{{ event.url | prepend: site.baseurl }}">
@@ -96,18 +125,18 @@ title: Inicio
 
           {% if event.description %}<p>{{ event.description }}</p>{% endif %}
 
-          <a href="{{ event.url | prepend: site.baseurl }}" class="index-button">Detalles del Evento</a>
+          <a href="{{ event.url | prepend: site.baseurl }}" class="index-button">see event details</a>
         </li>
       </a>
       {% endfor %}
     </ul>
 
-    <a href="{{ '/events' | prepend: site.baseurl }}" title="{{ site.title | prepend: 'See All ' | append: ' Events' }}" class="button">Todos los Eventos</a>
+    <a href="{{ '/events' | prepend: site.baseurl }}" title="{{ site.title | prepend: 'See All ' | append: ' Events' }}" class="button">See All Events</a>
   </section><!-- End homepage events selection -->
   <!-- Homepage issues selection -->
   <section id="services-container" class="homepage-issues">
     <a href="{{ '/issues' | prepend: site.baseurl }}" title="{{ site.title | append: ' Issues' }}">
-      <h2 class="home-header">Catálogo de Logias</h2>
+      <h2 class="home-header">Issues</h2>
     </a>
     <ul class="grid-container">
     {% for issue in site.issues limit:3 %}
@@ -130,7 +159,7 @@ title: Inicio
       </a>
       {% endunless %}
     {% endfor %}
-    <a href="{{ '/issues' | prepend: site.baseurl }}" title="See All Issues" class="button home-button">Ver Todas</a>
+    <a href="{{ '/issues' | prepend: site.baseurl }}" title="See All Issues" class="button home-button">See All Issues</a>
 
     </ul>
   </section><!-- End homepage issues selection -->
