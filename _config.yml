@@ -8,7 +8,7 @@
 # Site settings
 title: Gran Logia el Potosí
 description: 
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "/JekyllOrg" # the subpath of your site, e.g. /blog
 url: "https://damianeoloan.github.io" # the base hostname & protocol for your site
 
 # Profiles
