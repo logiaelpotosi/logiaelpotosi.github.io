@@ -7,7 +7,6 @@ layout: default
     <img src="{{ 'logias.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ page.title | append: ' featured image' }}" class="page-hero" />
     <div class="text-box">
       <h1 class="page-title">{{ page.title }}</h1>
-      <img src="{{ page.image | downcase | append: '.jpeg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{  }}" />
       <p>{{ page.description }}</p>
     </div>
   </header>
@@ -15,6 +14,8 @@ layout: default
   {% include social-shares.html %}
 
   <div class="post-content collection-content">
+    <img src="{{ page.image | downcase | append: '.jpeg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{  }}" />
+      
     {{ content }}
   </div>
 </article>
