@@ -143,13 +143,13 @@ title: Inicio
     <h2>{{ site.title | prepend: 'Contacta a La ' }}</h2>
     <form action="//formspree.io/{{ site.email }}"
     method="POST" class="formspree">
-      <input type="text" placeholder="your name" class="name" rows="1" required />
+      <input type="text" placeholder="Nombre Completo" class="name" rows="1" required />
 
-      <input type="email" name="email" placeholder="your email" maxlength="36" pattern="[a-zA-Z0-9_\.\+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-\.]+" class="email" required />
+      <input type="email" name="email" placeholder="Correo Electrónico" maxlength="36" pattern="[a-zA-Z0-9_\.\+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-\.]+" class="email" required />
 
-      <textarea name="message" placeholder="your message" rows="3" class="message"></textarea>
+      <textarea name="message" placeholder="Mensaje" rows="3" class="message"></textarea>
       <input type="hidden" name="_subject" value="Source: {{ site.baseurl | prepend: site.url }} contact form submission" />
-      <button type="submit" class="send">ok, send it</button>
+      <button type="submit" class="send">ENVIAR</button>
 
       <input type="text" name="_gotcha" style="display:none" />
       <input type="hidden" name="_next" value="/" />
