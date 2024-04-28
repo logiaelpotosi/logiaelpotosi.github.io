@@ -4,7 +4,7 @@ layout: default
 <article>
   <header class="page-header">
     <div class="mask"></div>
-    <img src="{{ 'issues.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ page.title | append: ' featured image' }}" class="page-hero" />
+    <img src="{{ 'logias.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ page.title | append: ' featured image' }}" class="page-hero" />
     <div class="text-box">
       <h1 class="page-title">{{ page.title }}</h1>
       <p>{{ page.description }}</p>
@@ -20,10 +20,10 @@ layout: default
 <!-- Related services -->
 {% if page.related %}
 <section id="related-sections">
-  <h2>Related Issues</h2>
+  <h2>Maś Logias</h2>
   <ul class="grid-container">
   {% assign related = page.related %}
-    {% for issue in site.issues %}
+    {% for issue in site.logias %}
       {% if related contains issue.title %}
       <a href="{{ issue.url | prepend: site.baseurl }}">
         <li class="one-third col">
