@@ -52,8 +52,8 @@ collections:
     featured-image:
     permalink: /services/:path
     output: true
-  issues:
-    title: Issues
+  logias:
+    title: Logias
     featured-image:
     permalink: /issues/:path
     output: true
