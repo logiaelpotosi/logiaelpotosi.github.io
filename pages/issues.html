@@ -9,11 +9,11 @@ related: services resources events
   <ul class="grid-container">
   {% for logia in site.logias %}
     {% unless logia.title == page.title %}
-    <a href="{{ issue.url | prepend: site.baseurl }}">
+    <a href="{{ logia.url | prepend: site.baseurl }}">
       {% if forloop.length == 2 %}
-      <li class="one-whole col">
+      <li class="one-third col">
       {% elsif forloop.length == 3 %}
-      <li class="one-half col">
+      <li class="one-third col">
       {% else %}
       <li class="one-third col">
         {% endif %}
