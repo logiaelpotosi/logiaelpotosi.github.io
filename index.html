@@ -108,11 +108,11 @@ title: Inicio
   </section><!-- End homepage events selection -->
   <!-- Homepage issues selection -->
   <section id="services-container" class="homepage-issues">
-    <a href="{{ '/issues' | prepend: site.baseurl }}" title="{{ site.title | append: ' Issues' }}">
+    <a href="{{ '/logias' | prepend: site.baseurl }}" title="{{ site.title | append: ' Issues' }}">
       <h2 class="home-header">Directorio de Logias</h2>
     </a>
     <ul class="grid-container">
-    {% for issue in site.issues limit:3 %}
+    {% for issue in site.logias limit:3 %}
       {% unless issue.title == page.title %}
       <a href="{{ issue.url | prepend: site.baseurl }}">
         {% if forloop.length <= 2 %}
