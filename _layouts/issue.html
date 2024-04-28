@@ -15,9 +15,10 @@ layout: default
 
   {% include social-shares.html %}
 
-  <div class="page-content">
+  <div class="post-content collection-content">
     <img src="{{ page.image | downcase | append: '.jpeg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ }}" style="width: 480px; height: 480px;" />
 
     {{ content }}
   </div>
+  
 </article>
