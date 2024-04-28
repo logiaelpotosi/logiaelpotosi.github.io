@@ -7,8 +7,8 @@ related: services resources events
 ---
 <section id="services-container">
   <ul class="grid-container">
-  {% for issue in site.issues %}
-    {% unless issue.title == page.title %}
+  {% for logia in site.logias %}
+    {% unless logia.title == page.title %}
     <a href="{{ issue.url | prepend: site.baseurl }}">
       {% if forloop.length == 2 %}
       <li class="one-whole col">
@@ -21,8 +21,8 @@ related: services resources events
           <img src="{{ page.title | downcase | append: '-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{  }}" />
           <div class="mask"></div>
           <div class="text-box">
-            <h1>{{ issue.title }}</h1>
-            {% if issue.description %}<p>{{ issue.description }}</p>{% endif %}
+            <h1>{{ logia.title }}</h1>
+            {% if logia.description %}<p>{{ logia.description }}</p>{% endif %}
         </div>
       </div>
     </li>
