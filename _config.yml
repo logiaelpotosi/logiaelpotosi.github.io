@@ -55,7 +55,7 @@ collections:
   logias:
     title: Logias
     featured-image:
-    permalink: /issues/:path
+    permalink: /logias/:path
     output: true
   events:
     title: Events
