@@ -1,8 +1,8 @@
 ---
-layout: page
+layout: about-page
 title: About
-description: "add a brief summary of your organization here" # Optional
-introduction: "This is the About page for your site. Add your introduction here. You'll find a guide to JekyllOrg on the homepage." # Optional
+description: Conoce mas acerca de la Masoneria en San Luis Potosí
+introduction: alguna breve introduccion de mrgm
 permalink: /about/
 ---
 <!-- About page introduction -->
@@ -11,7 +11,7 @@ permalink: /about/
 <!-- Team members -->
 {% if site.data.team-members.size > 0 %}
 <section class="team-members">
-  <h2>Our Team</h2>
+  <h2>Alto Cuerpo</h2>
   <div class="grid-container">
     {% for member in site.data.team-members %}
     {% comment %}Check whether total no. of staff members is odd / even and structure final member accordingly{% endcomment %}
@@ -41,7 +41,7 @@ permalink: /about/
 <!-- Careers link -->
 {% if site.data.career-vacancies.size > 0 %}
 <a href="{{ '/careers' | prepend: site.baseurl }}" title="{{ site.title | prepend: 'Careers at '}}" class="careers-link">
-  <h2>we're hiring!</h2>
+  <h2>test.....</h2>
   <p>{{ site.title | prepend: 'See all current vacancies at ' }}</p>
 </a><!-- End careers link -->
 {% endif %}
@@ -49,7 +49,7 @@ permalink: /about/
 {% if site.data.locations.size > 0 %}
 <!-- Office locations map -->
 <section class="office-locations">
-  <h2>Our Locations</h2>
+  <h2>Ubicación</h2>
   <div class="map-container">
     <div>
       <div class="row">
