@@ -57,10 +57,10 @@ collections:
     featured-image:
     permalink: /logias/:path
     output: true
-  events:
-    title: Events
+  eventos:
+    title: Eventos
     featured-image:
-    permalink: /events/:path
+    permalink: /eventos/:path
     output: true
 
 # Prose
