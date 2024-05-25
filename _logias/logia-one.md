@@ -8,4 +8,7 @@ related: # Add the title of related issues here and they will appear at the bott
   - Issue Three
   - Issue Six
 ---
-La RLS Baden Powell de Gilwell 9 No.18 sesiona los miercoles de 18:00 - 20:00hrs
+**La R.L.S. Baden Powell de Gilwell 9 No.18**, fundada por Scouts el **19 de marzo de 2021**, sesiona todos los miércoles de **18:00 - 20:00hrs**.
+
+- **Teléfono:** [444444444](tel:444444444)
+- **Correo:** [test@test.com](mailto:test@test.com)
