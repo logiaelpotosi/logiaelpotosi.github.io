@@ -16,7 +16,13 @@ layout: default
   {% include social-shares.html %}
 
   <div class="post-content collection-content">
-    <img src="{{ page.image | downcase | append: '.jpeg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ }}" style="width: 480px; height: 480px;" />
+    {% capture srcset %}
+    {% for i in resized %}
+        /{{ i.path }} {{ i.width }}w,
+    {% endfor %}
+    {% endcapture %}
+
+    <img src="{{ page.image | downcase | append: '.jpeg' | prepend: '/images/featured/' | prepend: site.baseurl }}" srcset="{{ srcset | strip_newlines }} /{{ original.path }} {{ original.width }}w" alt="{{ }}" style="width: 480px; height: 480px;" />
 
     {{ content }}
   </div>
