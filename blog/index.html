@@ -2,7 +2,7 @@
 layout: default
 title: News
 ---
-<h1 class="page-heading">News</h1>
+<h1 class="page-heading">Noticias y Publiciaciones</h1>
 <!-- Blog / news index -->
 <ul class="post-list">
   {% for post in paginator.posts %}
@@ -24,22 +24,22 @@ title: News
       <p>{{ post.excerpt | truncatewords: 30 }}</p>
     </a>
 
-    <a href="{{ post.url | prepend: site.baseurl }}" class="index-button">read on...</a>
+    <a href="{{ post.url | prepend: site.baseurl }}" class="index-button">Leer más...</a>
   </li>
   {% endfor %}
 </ul><!-- End blog / news index -->
 <!-- Pagination links -->
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="paginate-link active previous" title="Previous Page">PREV</a>
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="paginate-link active previous" title="Previous Page">ANT.</a>
   {% else %}
-    <span class="paginate-link previous">PREV</span>
+    <span class="paginate-link previous">ANT.</span>
   {% endif %}
   <span class="page_number ">{{ paginator.page }} / {{ paginator.total_pages }}</span>
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="paginate-link active next" title="Next Page">NEXT</a>
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="paginate-link active next" title="Next Page">SIG.</a>
   {% else %}
-    <span class="paginate-link next">NEXT</span>
+    <span class="paginate-link next">SIG.</span>
   {% endif %}
 </div><!-- End pagination -->
 
