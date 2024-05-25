@@ -16,37 +16,9 @@ layout: default
   {% include social-shares.html %}
 
   <div class="post-content collection-content">
-    <a href="{{ page.image | downcase | append: '.jpeg' | prepend: '/images/featured/' | prepend: site.baseurl }}" class="lightbox">
-        <img src="{{ page.image | downcase | append: '.jpeg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ }}" style="width: 480px; height: 480px;" />
-    </a>
+    <img src="{{ page.image | downcase | append: '.jpeg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ }}" style="width: 480px; height: 480px;" />
+
     {{ content }}
-</div>
+  </div>
   
 </article>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-      var lightboxLinks = document.querySelectorAll('.lightbox');
-  
-      lightboxLinks.forEach(function(link) {
-          link.addEventListener('click', function(event) {
-              event.preventDefault();
-              var href = this.getAttribute('href');
-  
-              var overlay = document.createElement('div');
-              overlay.classList.add('lightbox-overlay');
-  
-              var image = document.createElement('img');
-              image.src = href;
-  
-              overlay.appendChild(image);
-              document.body.appendChild(overlay);
-  
-              overlay.addEventListener('click', function() {
-                  document.body.removeChild(overlay);
-              });
-          });
-      });
-  });
-  </script>
-  
