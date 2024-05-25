@@ -10,7 +10,7 @@ locations:
     latitude: 51.443932
     longitude: -0.280600
 title: Gran Tenida Mayo 2024
-description: "La gran tenida se llevara acabo el mes de mayo del 2024."
+description: "
 ---
 **La gran tenida se llevará a cabo en el mes de mayo del 2024**, en la cual se planea tocar los temas relacionados al nuevo templo y el presupuesto anual de egresos e ingresos. 
 
@@ -21,4 +21,4 @@ La sesión se llevará a cabo en **Matehuala, San Luis Potosí**, con el siguien
   - Tenida de maticación a las **20:00hrs**
 
 - **Domingo 26 de Mayo:**
-  - Gran Tenida a las **10:00hrs**
+  - Gran Tenida a las **10:00hrs**"
