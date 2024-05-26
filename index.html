@@ -7,6 +7,7 @@ title: Inicio
 <style>
   .text-box {
     top: 0;
+    left: 20;
     width: 100%;
   }
 </style>
@@ -20,19 +21,17 @@ title: Inicio
       <img src="{{ 'home' | append: '.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ page.title | append: ' featured image' }}" class="page-hero" />
       <img src="{{ 'home' | append: '-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ page.title | append: ' featured image' }}" class="mobile-hero" />
       
-      <section class="cta">
+      <div class="text-box">
         
         <div class="cta-content">
           <div class="container">
               <h2>{{ site.description }}</h2>
               <h3 style="color:white">S.F.U.</h3>
-              <br>
-              <a href="#contact" class="btn btn-outline btn-xl page-scroll">ENVIAR MENSAJE</a>
           </div>
-          <div class="overlay"></div>
-        </div>
-      </section>
-     
+      </div>
+      <div class="overlay"></div>
+
+      </div>
     </header>
   </article><!-- End homepage feature -->
   <!-- Homepage news selection -->
