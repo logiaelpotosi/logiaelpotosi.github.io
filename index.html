@@ -23,6 +23,11 @@ title: Inicio
   <section class="home-feature">
 
     <header class="page-header no-margin">
+
+
+      <div class="mask"  style="background-color: hsla(0, 0%, 0%, 0.6)" ></div>
+      <img src="{{ 'home' | append: '.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ page.title | append: ' featured image' }}" class="page-hero" />
+      <img src="{{ 'home' | append: '-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ page.title | append: ' featured image' }}" class="mobile-hero" />
       
       <nav class="navbar navbar-default navbar-fixed-top">
         <a href="{{ '/' | prepend: site.baseurl }}" class="nav-title {% if site.title.size > 9 %}long-title{% endif %}"><h1>{{ site.title }}</h1></a>
@@ -31,10 +36,7 @@ title: Inicio
         {% endfor %}
         <div class="nav-border"></div>
       </nav>
-
-      <div class="mask"  style="background-color: hsla(0, 0%, 0%, 0.6)" ></div>
-      <img src="{{ 'home' | append: '.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ page.title | append: ' featured image' }}" class="page-hero" />
-      <img src="{{ 'home' | append: '-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ page.title | append: ' featured image' }}" class="mobile-hero" />
+      
       <div class="text-box">
         <p>{{ site.description }}</p>
       </div>
