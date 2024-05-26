@@ -2,6 +2,14 @@
 layout: default
 title: Inicio
 ---
+
+.text-box {
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* asegúrate de que se muestre por encima de otros elementos */
+}
+
+
 <!-- Homepage feature -->
 <div class="home">
 
@@ -15,6 +23,7 @@ title: Inicio
       
       <a class="site-title" href="{{ site.baseurl | prepend: site.url }}"><h1>{{ site.title }}</h1></a>
 
+      <div class="text-box">
       <input id="ctrl" name="ctrl" type="checkbox"></input>
 
       <div class="icon-container">
@@ -58,8 +67,6 @@ title: Inicio
           <div class="nav-border"></div>
         </nav>
       </div>
-
-      <div class="text-box">
         <p>{{ site.description }}</p>
       </div>
     </header>
