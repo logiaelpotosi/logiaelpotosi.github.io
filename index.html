@@ -3,6 +3,28 @@ layout: default
 title: Inicio
 ---
 <!-- Homepage feature -->
+
+<style>
+  .navbar-fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* asegúrate de que se muestre por encima de otros elementos */
+  }
+  
+  body {
+    padding-top: 70px; /* ajuste este valor según la altura de tu barra de navegación */
+  }
+</style>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <a href="{{ '/' | prepend: site.baseurl }}" class="nav-title {% if site.title.size > 9 %}long-title{% endif %}"><h1>{{ site.title }}</h1></a>
+  {% for link in site.data.nav-links %}
+    <a class="nav-link" href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
+  {% endfor %}
+  <div class="nav-border"></div>
+</nav>
+
 <div class="home">
   <section class="home-feature">
     <header class="page-header no-margin">
@@ -10,42 +32,7 @@ title: Inicio
       <img src="{{ 'home' | append: '.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ page.title | append: ' featured image' }}" class="page-hero" />
       <img src="{{ 'home' | append: '-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ page.title | append: ' featured image' }}" class="mobile-hero" />
       <div class="text-box">
-        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-          <div class="container">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                              <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                          </button>
-                  <a class="navbar-brand page-scroll" href="#page-top">Rosillo Labs</a>
-              </div>
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav navbar-right">
-                      <li>
-                          <a class="page-scroll" href="#features">Servicios</a>
-                      </li>
-                      <li>
-                          <a class="page-scroll" href="#header">Geadex</a>
-                      </li>
-                      <li>
-                              <a class="page-scroll" href="#apps">Apps</a>
-                          </li>
-                      <li>
-                          <a class="page-scroll" href="#portfolio">Repositorios</a>
-                      </li>
-                      <li>
-                          <a class="page-scroll" href="#contact">Contacto</a>
-                      </li>
-                      <li>
-                          <a href="/blog/">Blog</a>
-                      </li>
-                  </ul>
-              </div>
-              <!-- /.navbar-collapse -->
-          </div>
-          <!-- /.container-fluid -->
-      </nav>
-      
+        <p>{{ site.description }}</p>
       </div>
     </header>
   </section><!-- End homepage feature -->
