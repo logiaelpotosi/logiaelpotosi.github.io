@@ -21,7 +21,17 @@ title: Inicio
       <img src="{{ 'home' | append: '-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ page.title | append: ' featured image' }}" class="mobile-hero" />
       
       <div class="text-box">
-        <p>{{ site.description }}</p>
+        
+        <div class="cta-content">
+          <div class="container">
+              <h2>{{ site.description }}</h2>
+              <h3 style="color:white">S.F.U.</h3>
+              <br>
+              <a href="#contact" class="btn btn-outline btn-xl page-scroll">ENVIAR MENSAJE</a>
+          </div>
+      </div>
+      <div class="overlay"></div>
+
       </div>
     </header>
   </article><!-- End homepage feature -->
