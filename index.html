@@ -12,6 +12,7 @@ title: Inicio
     z-index: 1000; /* asegúrate de que se muestre por encima de otros elementos */
   }
   
+
 </style>
 
 <div class="home">
@@ -27,13 +28,11 @@ title: Inicio
       <img src="{{ 'home' | append: '-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ page.title | append: ' featured image' }}" class="mobile-hero" />
       
       <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="text-box">
         <a href="{{ '/' | prepend: site.baseurl }}" class="nav-title {% if site.title.size > 9 %}long-title{% endif %}"><h1>{{ site.title }}</h1></a>
         {% for link in site.data.nav-links %}
           <a class="nav-link" href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
         {% endfor %}
         <div class="nav-border"></div>
-      </div>
       </nav>
       
       <div class="text-box">
