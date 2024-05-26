@@ -18,7 +18,10 @@ title: Inicio
 </style>
 
 <div class="home">
-  
+
+
+  <section class="home-feature">
+    
   <nav class="navbar navbar-default navbar-fixed-top">
     <a href="{{ '/' | prepend: site.baseurl }}" class="nav-title {% if site.title.size > 9 %}long-title{% endif %}"><h1>{{ site.title }}</h1></a>
     {% for link in site.data.nav-links %}
@@ -27,7 +30,6 @@ title: Inicio
     <div class="nav-border"></div>
   </nav>
 
-  <section class="home-feature">
     <header class="page-header no-margin">
       <div class="mask"  style="background-color: hsla(0, 0%, 0%, 0.6)" ></div>
       <img src="{{ 'home' | append: '.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ page.title | append: ' featured image' }}" class="page-hero" />
