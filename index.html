@@ -5,59 +5,85 @@ title: Inicio
 <!-- Homepage feature -->
 <div class="home">
 
+  <!-- Begin #carousel-section -->
+  <section id="carousel-section" class="section-global-wrapper"> 
+    <div class="container-fluid-kamn">
+        <div class="row">
+            <div id="carousel-1" class="carousel slide" data-ride="carousel">
 
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <article class="page">
-          <header class="page-header">
-            <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.6)"></div>
-            <img src="{{ 'home' | append: '.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ page.title | append: ' featured image' }}" class="d-block w-100 page-hero">
-            <img src="{{ 'home' | append: '-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ page.title | append: ' featured image' }}" class="d-block w-100 mobile-hero">
-            <div class="text-box">
-              <div class="cta-content">
-                <div class="container">
-                  <h2>{{ site.description }}</h2>
-                  <h3 style="color:white">S.F.U.</h3>
+                <!-- Indicators -->
+                <ol class="carousel-indicators visible-lg">
+                    <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-1" data-slide-to="1"></li>
+                    <li data-target="#carousel-1" data-slide-to="2"></li>
+                </ol>
+    
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <!-- Begin Slide 1 -->
+                    <div class="item active">
+                        <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.6)"></div>
+                        <img src="{{ 'home' | append: '.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ page.title | append: ' featured image' }}" class="d-block w-100 page-hero">
+                        <img src="{{ 'home' | append: '-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ page.title | append: ' featured image' }}" class="d-block w-100 mobile-hero">
+                        <div class="text-box">
+                          <div class="cta-content">
+                            <div class="container">
+                              <h2>{{ site.description }}</h2>
+                              <h3 style="color:white">S.F.U.</h3>
+                            </div>
+                          </div>
+                          <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <!-- End Slide 1 -->
+
+                    <!-- Begin Slide 2 -->
+                    <div class="item">
+                      <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.6)"></div>
+                      <img src="{{ 'home' | append: '.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ page.title | append: ' featured image' }}" class="d-block w-100 page-hero">
+                      <img src="{{ 'home' | append: '-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ page.title | append: ' featured image' }}" class="d-block w-100 mobile-hero">
+                      <div class="text-box">
+                        <div class="cta-content">
+                          <div class="container">
+                            <h2>{{ site.description }}</h2>
+                            <h3 style="color:white">S.F.U.</h3>
+                          </div>
+                        </div>
+                        <div class="overlay"></div>
+                      </div>
+                    </div>
+                    <!-- End Slide 2 -->
+
+                    <!-- Begin Slide 3 -->
+                    <div class="item">
+                      <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.6)"></div>
+                      <img src="{{ 'home' | append: '.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ page.title | append: ' featured image' }}" class="d-block w-100 page-hero">
+                      <img src="{{ 'home' | append: '-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ page.title | append: ' featured image' }}" class="d-block w-100 mobile-hero">
+                      <div class="text-box">
+                        <div class="cta-content">
+                          <div class="container">
+                            <h2>{{ site.description }}</h2>
+                            <h3 style="color:white">S.F.U.</h3>
+                          </div>
+                        </div>
+                        <div class="overlay"></div>
+                      </div>
+                    </div>
+                    <!-- End Slide 3 -->
                 </div>
-              </div>
-              <div class="overlay"></div>
+    
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-1" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-1" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
             </div>
-          </header>
-        </article>
-      </div>
-      <div class="carousel-item">
-        <article class="page">
-          <header class="page-header">
-            <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.6)"></div>
-            <img src="{{ 'home' | append: '.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ page.title | append: ' featured image' }}" class="d-block w-100 page-hero">
-            <img src="{{ 'home' | append: '-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ page.title | append: ' featured image' }}" class="d-block w-100 mobile-hero">
-            <div class="text-box">
-              <div class="cta-content">
-                <div class="container">
-                  <h2>{{ site.description }}</h2>
-                  <h3 style="color:white">S.F.U.</h3>
-                </div>
-              </div>
-              <div class="overlay"></div>
-            </div>
-          </header>
-        </article>
-      </div>
+        </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </a>
-  </div>
+</section>
+<!-- End #carousel-section -->
 
   <!-- End homepage feature -->
   <!-- Homepage news selection -->
