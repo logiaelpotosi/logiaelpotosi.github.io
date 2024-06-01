@@ -5,27 +5,72 @@ title: Inicio
 <!-- Homepage feature -->
 <div class="home">
 
-  <article class="page">
 
-    <header class="page-header">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
 
-      <div class="mask"  style="background-color: hsla(0, 0%, 0%, 0.6)" ></div>
-      <img src="{{ 'home' | append: '.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ page.title | append: ' featured image' }}" class="page-hero" />
-      <img src="{{ 'home' | append: '-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ page.title | append: ' featured image' }}" class="mobile-hero" />
-      
-      <div class="text-box">
-        
-        <div class="cta-content">
-          <div class="container">
-              <h2>{{ site.description }}</h2>
-              <h3 style="color:white">S.F.U.</h3>
-          </div>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <article class="page">
+          <header class="page-header">
+            <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.6)"></div>
+            <img src="{{ 'home' | append: '.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ page.title | append: ' featured image' }}" class="d-block w-100 page-hero">
+            <img src="{{ 'home' | append: '-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ page.title | append: ' featured image' }}" class="d-block w-100 mobile-hero">
+            <div class="text-box">
+              <div class="cta-content">
+                <div class="container">
+                  <h2>{{ site.description }}</h2>
+                  <h3 style="color:white">S.F.U.</h3>
+                </div>
+              </div>
+              <div class="overlay"></div>
+            </div>
+          </header>
+        </article>
       </div>
-      <div class="overlay"></div>
-
+      <div class="carousel-item">
+        <article class="page">
+          <header class="page-header">
+            <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.6)"></div>
+            <img src="{{ 'home' | append: '.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ page.title | append: ' featured image' }}" class="d-block w-100 page-hero">
+            <img src="{{ 'home' | append: '-tn.jpg' | prepend: '/images/featured/' | prepend: site.baseurl }}" alt="{{ page.title | append: ' featured image' }}" class="d-block w-100 mobile-hero">
+            <div class="text-box">
+              <div class="cta-content">
+                <div class="container">
+                  <h2>{{ site.description }}</h2>
+                  <h3 style="color:white">S.F.U.</h3>
+                </div>
+              </div>
+              <div class="overlay"></div>
+            </div>
+          </header>
+        </article>
       </div>
-    </header>
-  </article><!-- End homepage feature -->
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  
+
+
+
+
+
+  <!-- End homepage feature -->
   <!-- Homepage news selection -->
   <section id="homepage-news">
     <ul class="post-list">
