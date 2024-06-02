@@ -34,7 +34,7 @@ div.icon-container {
 div.icon-container, div.nav-container {
   > label {
     cursor: pointer;
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     -webkit-transition: opacity 0.5s ease-in;
