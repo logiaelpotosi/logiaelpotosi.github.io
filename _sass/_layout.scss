@@ -25,6 +25,7 @@ div.icon-container {
   margin: 1rem auto 0;
   width: 4rem;
   height: 4rem;
+  background: $white-color;
   margin-right: $spacing-unit;
   position: relative;
   @include media-query($on-mobile) { margin-right: 1rem; }
