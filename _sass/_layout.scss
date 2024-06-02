@@ -7,14 +7,22 @@
   background: $white-color;
 }
 
+.site-title {
+  display: flex;
+  justify-content: center;  // Centra horizontalmente el contenido
+  align-items: center;  // Centra verticalmente el contenido
+  height: 5rem;  // Asegura que el contenedor tenga una altura suficiente para centrar verticalmente el h1
+}
+
 .site-title h1 {
-  float: left;
   font-weight: 300;
-  line-height: 5rem;
   margin-bottom: 0;
-  margin-left: $spacing-unit;
+  margin-left: 0;  // Elimina el margen izquierdo si no es necesario
   color: $grey-color-dark;
-  @include media-query($on-mobile) { margin-left: 1rem;}
+
+  @include media-query($on-mobile) {
+    margin-left: 1rem;  // Ajusta el margen en dispositivos móviles si es necesario
+  }
 
   &:hover {
     text-decoration: none;
