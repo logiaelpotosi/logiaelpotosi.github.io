@@ -26,7 +26,7 @@ div.icon-container {
   width: 4rem;
   height: 4rem;
   margin-right: $spacing-unit;
-  float: right;
+  position: relative;
   @include media-query($on-mobile) { margin-right: 1rem; }
 }
 
