@@ -322,8 +322,8 @@ div.text-box {
   display: block;
   margin: 1rem 0 $spacing-unit;
   padding: 0;
-  min-height: 50vh;
-  max-height: 80vh;
+  width: 100%;
+  height: auto; /* Adjust this as needed */
   overflow: hidden;
 
   img.page-hero {
