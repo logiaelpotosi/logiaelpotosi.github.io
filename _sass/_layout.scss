@@ -21,10 +21,12 @@
 }
 
 div.icon-container {
-  display: flex;
-  justify-content: space-between; /* Alinea los elementos en los extremos del contenedor */
-  align-items: center;
+  display: block;
+  margin: 1rem auto 0;
+  width: 4rem;
+  height: 4rem;
   margin-right: $spacing-unit;
+  position: relative;
   @include media-query($on-mobile) { margin-right: 1rem; }
 }
 
