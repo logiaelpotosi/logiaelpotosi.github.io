@@ -7,6 +7,10 @@
   background: $white-color;
 }
 
+.site-title {
+  height: 5rem; // Ajusta la altura según necesites para centrar verticalmente el título
+}
+
 .site-title h1 {
   float: left;
   font-weight: 300;
