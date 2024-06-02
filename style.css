@@ -53,14 +53,3 @@
     margin-right: auto;
     margin-left: auto;
   }
-
-  .carousel-control {
-    top: 50%;
-    transform: translateY(-50%);
-    width: 5%;
-  }
-
-  .carousel-control .fa {
-    font-size: 2rem;
-  }
-  
