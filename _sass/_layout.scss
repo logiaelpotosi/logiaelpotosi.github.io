@@ -7,10 +7,6 @@
   background: $white-color;
 }
 
-.site-title {
-  height: 5rem; // Ajusta la altura según necesites para centrar verticalmente el título
-}
-
 .site-title h1 {
   float: left;
   font-weight: 300;
@@ -29,7 +25,7 @@ div.icon-container {
   display: block;
   margin: 1rem auto 0;
   width: 4rem;
-  height: 5rem;
+  height: 4rem;
   margin-right: $spacing-unit;
   position: relative;
   @include media-query($on-mobile) { margin-right: 1rem; }
@@ -47,7 +43,7 @@ div.icon-container, div.nav-container {
 
     > svg {
       width: 3rem;
-      height: 5rem;
+      height: auto;
       path, rect {
         fill: $grey-color-dark;
       }
