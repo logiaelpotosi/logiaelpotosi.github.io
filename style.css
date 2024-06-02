@@ -34,3 +34,15 @@
 .section-global-wrapper {
     position: relative;
   }
+
+  .container-fluid-kamn {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .container-kamn {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
