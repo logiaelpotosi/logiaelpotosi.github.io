@@ -56,26 +56,32 @@ div.icon-container:hover {
 }
 
 input#ctrl { display: none; }
-
 div.nav-container {
-  position: auto;
+  position: fixed;  // Usa fixed para que la barra de navegación esté siempre visible en la pantalla.
   width: 100%;
-  height: 100%;
+  height: auto;  // Ajusta la altura automáticamente según el contenido.
   left: 0;
   top: 0;
-  background: rgba(2,2,2,0.9);
+  background: rgba(2, 2, 2, 0.9);
   text-align: center;
-  z-index: 100;
+  z-index: 100;  // Asegúrate de que esté sobre el carrusel.
 
   label {
-    position: relative;
+    display: block;  // Asegura que el label ocupe todo el ancho disponible.
     width: 100%;
     height: 5rem;
-    @include media-query($on-mobile) { margin-right: 1rem; }
+    line-height: 5rem;  // Centra verticalmente el contenido dentro del label.
+    
+    @include media-query($on-mobile) {
+      margin-right: 1rem;
+    }
 
     svg.close-nav {
-      float: right;
-      margin: 1.25rem 3rem auto;
+      position: absolute;  // Usa absolute para posicionar el SVG relativo al label.
+      right: 3rem;  // Alinea el SVG a la derecha.
+      top: 50%;  // Posiciona el SVG verticalmente en el centro.
+      transform: translateY(-50%);  // Ajusta el SVG para que esté perfectamente centrado verticalmente.
+      margin: 0;  // Elimina el margen para evitar desajustes.
 
       path, rect {
         fill: $white-color;
