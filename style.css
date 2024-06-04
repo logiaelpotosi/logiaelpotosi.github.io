@@ -65,3 +65,52 @@
   .carousel-control .fa {
     font-size: 2rem;
   }
+
+
+
+.active{
+  background:#74B9B9 !important;
+  color: white;
+}
+.navbar {
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+}
+/*
+* ==========================================================================
+* Navbar Nav Links
+* ==========================================================================
+*/
+.navbar-nav > li > a {
+  padding: 10px 15px;
+  margin: 5px 5px;
+  border-radius: 4px;
+}
+/*
+* ==========================================================================
+* Brand / Project Name
+* ==========================================================================
+*/
+.navbar-brand {  
+  z-index: 9999px;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding-top: 0px;
+}
+.side-left{
+  background:#528C7C;
+  box-shadow: 3px grey;
+  color: white;
+  padding: 30px;
+  letter-spacing: .9px;
+}
+@media (min-width: 800px){ 
+ 
+    .side-left{
+  height: 1248px;
+}
+ }
