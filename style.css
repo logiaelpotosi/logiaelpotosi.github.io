@@ -114,3 +114,14 @@
   height: 1248px;
 }
  }
+
+ .office-logo {
+  width: 100px;
+}
+
+@media (max-width: 768px){ 
+    .office-logo{
+      height: 100px;
+      width: 60px;
+  }
+}
