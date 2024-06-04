@@ -1,176 +1,57 @@
-/**
- * Site header
- */
- .site-header {
-  width: 100%;
-  background: $white-color;
-}
 
-.site-title h1 {
-  float: left;
-  font-weight: 300;
-  line-height: 5rem;
+
+/*
+* ==========================================================================
+* Navbar
+* ==========================================================================
+*/
+.active{
+  background:#74B9B9 !important;
+  color: white;
+}
+.navbar {
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
   margin-bottom: 0;
-  margin-left: $spacing-unit;
-  color: $grey-color-dark;
-  @include media-query($on-mobile) { margin-left: 1rem;}
-
-  &:hover {
-    text-decoration: none;
-  }
 }
-
-div.icon-container {
-  display: block;
-  margin: 1rem auto 0;
-  width: 4rem;
-  height: 4rem;
-  background: $white-color;
-  margin-right: $spacing-unit;
-  position: relative;
-  @include media-query($on-mobile) { margin-right: 1rem; }
+/*
+* ==========================================================================
+* Navbar Nav Links
+* ==========================================================================
+*/
+.navbar-nav > li > a {
+  padding: 10px 15px;
+  margin: 5px 5px;
+  border-radius: 4px;
 }
-
-div.icon-container, div.nav-container {
-  > label {
-    cursor: pointer;
-    position: absolute;
-    left: 0;
-    top: 0;
-    -webkit-transition: opacity 0.5s ease-in;
-    transition: opacity 0.5s ease-in;
-    z-index: 100;
-
-    > svg {
-      width: 3rem;
-      height: auto;
-      path, rect {
-        fill: $grey-color-dark;
-      }
-    }
-  }
+/*
+* ==========================================================================
+* Brand / Project Name
+* ==========================================================================
+*/
+.navbar-brand {  
+  z-index: 9999px;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding-top: 0px;
 }
-
-div.icon-container:hover {
-  cursor: pointer;
+.side-left{
+  background:#528C7C;
+  box-shadow: 3px grey;
+  color: white;
+  padding: 30px;
+  letter-spacing: .9px;
 }
-
-input#ctrl { display: none; }
-
-div.nav-container {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: rgba(2,2,2,0.9);
-  text-align: center;
-  z-index: 100;
-
-  label {
-    position: relative;
-    width: 100%;
-    height: 5rem;
-    @include media-query($on-mobile) { margin-right: 1rem; }
-
-    svg.close-nav {
-      float: right;
-      margin: 1.25rem 3rem auto;
-
-      path, rect {
-        fill: $white-color;
-      }
-    }
-  }
+@media (min-width: 800px){ 
+ 
+    .side-left{
+  height: 1248px;
 }
-
-nav.menu {
-  clear: both;
-  position: relative;
-  top: 20%;
-  max-width: 95%;
-  margin: 0 auto;
-
-  a.nav-title, a.nav-link {
-    text-decoration: none;
-    @include media-query($on-mobile) {
-      h1 { font-size: 5rem; }
-    }
-  }
-
-  a.nav-link {
-    display: inline-block;
-    clear: none;
-    position: relative;
-    padding-bottom: 1rem;
-    display: inline-block;
-    color: $white-color;
-    font-size: 3rem;
-    opacity: 0.8;
-    -webkit-transition: opacity 0.5s ease-in;
-    transition: opacity 0.5s ease-in;
-    &:not(:last-of-type) {
-      margin: $spacing-unit/2;
-    }
-
-    @include media-query($on-mobile) {
-      font-size: 1.8rem;
-      font-weight: 400;
-      margin: 0 $spacing-unit/3;
-      &:not(:last-of-type) {
-        margin: $spacing-unit/4;
-      }
-    }
-
-    &:after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 0;
-      height: 0.5rem;
-      background: $white-color;
-      @extend %ease-in;
-    }
-  }
-
-  h1, a.nav-link:hover, a.nav-link:focus {
-    color: $white-color;
-    &:after { width: 100%; }
-  }
-
-  div.nav-border {
-    display: block;
-    margin: 3rem auto auto;
-    width: 12.5%;
-    border-bottom: .1rem solid $white-color;
-    @include media-query($on-tablet) { width: 25%; }
-    @include media-query($on-mobile) {
-      width: 33.33333333%;
-      margin: 1rem auto auto;
-    }
-  }
-}
-
-div.icon-container~div.fullscreen {
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: visibility 0s 0.5s, opacity 0.5s;
-  transition: visibility 0s 0.5s, opacity 0.5s;
-}
-
-input#ctrl:checked + div.icon-container~div.fullscreen {
-  opacity: 1;
-  visibility: visible;
-  -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s;
-}
-
-input#ctrl:checked~nav.menu a.nav-link {
-  opacity: 1;
-}
-
-
+ }
+ 
 /**
  * Site footer
  */
