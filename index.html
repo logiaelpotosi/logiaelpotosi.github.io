@@ -6,100 +6,122 @@ title: Inicio
 <div class="home">
  <!-- Begin #carousel-section -->
 
- <header class="page-header no-margin">
-  <div class="text-box">
-    <img
-    src="/images/featured/nologo.png"
-    alt=""
-    width="30"
-    height="30"
-    class="d-inline-block align-text-top"
-  />
-    <p>{{ site.description }}</p>
+ <div style="font-size: 15px; line-height: 24px; background: #F8FAFF;">
 
-    <nav class="menu">
-      <a href="{{ '/' | prepend: site.baseurl }}" class="nav-title {% if site.title.size > 9 %}long-title{% endif %}"><h1>{{ site.title }}</h1></a>
-      {% for link in site.data.nav-links %}
-        <a class="nav-link" href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
-      {% endfor %}
-      <div class="nav-border"></div>
-    </nav>
-  </div>
-</header>
+    <header class="page-header no-margin">
 
-<div style="font-size: 15px; line-height: 24px; background: #F8FAFF;">
-  <section id="carousel-section" class="section-global-wrapper"> 
-    <div class="container-fluid-kamn">
-        <div class="row">
-            <div id="carousel-1" class="carousel slide" data-ride="carousel">
+      <nav class="navbar navbar-expand-lg navbar-light bg-custom">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
 
-                <!-- Indicators -->
-                <ol class="carousel-indicators visible-lg">
-                    <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-1" data-slide-to="1"></li>
-                    <li data-target="#carousel-1" data-slide-to="2"></li>
-                    <li data-target="#carousel-1" data-slide-to="3"></li>
-                </ol>
-    
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    <!-- Begin Slide 1 -->
-                    <div class="item active">
-                      <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.6)"></div>
-                        <img src="../images/featured/home.jpg" height="400" alt="Image of first carousel">
-                        <div class="carousel-caption">
-                            <h3 class="carousel-title hidden-xs">{{ site.description }}</h3>
-                            <p class="carousel-body">{{ site.description }}</p>
-                        </div>
-                    </div>
-                    <!-- End Slide 1 -->
+            <img
+              src="/static/img/nologo.png"
+              alt=""
+              width="30"
+              height="30"
+              class="d-inline-block align-text-top"
+            />
 
-                    <!-- Begin Slide 2 -->
-                    <div class="item">
-                      <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.6)"></div>
-                        <img src="../images/featured/home.jpg" height="400" alt="Image of second carousel">
-                        <div class="carousel-caption">
-                            <h3 class="carousel-title hidden-xs">FUERZA</h3>
-                            <p class="carousel-body">FUERZA</p>
-                        </div>
-                    </div>
-                    <!-- End Slide 2 -->
+            <h5 class="d-inline-block align-text-top text-white">
+              {{version.split(' ')[0] + ' ' + version.split(' ')[1]}}
+            </h5>
 
-                    <!-- Begin Slide 3 -->
-                    <div class="item">
-                      <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.6)"></div>
-                        <img src="../images/featured/home.jpg" height="400" alt="Image of third carousel">
-                        <div class="carousel-caption">
-                            <h3 class="carousel-title hidden-xs">BELLEZA</h3>
-                            <p class="carousel-body">BELLEZA</p>
-                        </div>
-                    </div>
+          </a>
+          
+          <div class="container-fluid" style="display: flex; justify-content: flex-end; gap: 10px;" >
 
-                    <div class="item">
-                      <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.6)"></div>
-                        <img src="../images/featured/home.jpg" height="400" alt="Image of third carousel">
-                        <div class="carousel-caption">
-                            <h3 class="carousel-title hidden-xs">CANDOR</h3>
-                            <p class="carousel-body">CANDOR</p>
-                        </div>
-                    </div>
-                    <!-- End Slide 4  -->
-                </div>
-    
-                <!-- Controls -->
-                <a class="left carousel-control" href="#carousel-1" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                </a>
-                <a class="right carousel-control" href="#carousel-1" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
-                
-            </div>
+          <a class="btn btn-light" href="/SOPORTE" role="button" style="text-decoration: none; display: flex; align-items: center; justify-content: center; padding: 0.5rem 1rem;">
+            <i class="fas fa-envelope-open-text" style="margin-right: 5px;"></i>
+          </a>
+
+          <a class="btn btn-light"  onclick="return confirmExit()" href="/logout" role="button" style="text-decoration: none; display: flex; align-items: center; justify-content: center; padding: 0.5rem 1rem;">
+            <i class="fas fa-door-open" style="margin-right: 5px;"></i>
+          </a>
+
+          <a class="btn btn-light" href="/" role="button" style="text-decoration: none; display: flex; align-items: center; justify-content: center; padding: 0.5rem 1rem;">
+            <i class="fas fa-home" style="margin-right: 5px;"></i>
+          </a>
+
         </div>
-    </div>
-  </section>
-</div>
 
+        </div>
+      </nav>
+
+    </header>
+    <br>
+
+    <section id="carousel-section" class="section-global-wrapper"> 
+      <div class="container-fluid-kamn">
+          <div class="row">
+              <div id="carousel-1" class="carousel slide" data-ride="carousel">
+
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators visible-lg">
+                      <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel-1" data-slide-to="1"></li>
+                      <li data-target="#carousel-1" data-slide-to="2"></li>
+                      <li data-target="#carousel-1" data-slide-to="3"></li>
+                  </ol>
+      
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                      <!-- Begin Slide 1 -->
+                      <div class="item active">
+                        <div class="mask"  style="background-color: hsla(0, 0%, 0%, 0.6)" ></div>
+                          <img src="../images/featured/home.jpg" height="400" alt="Image of first carousel">
+                          <div class="carousel-caption">
+                              <h3 class="carousel-title hidden-xs">{{ site.description }}</h3>
+                              <p class="carousel-body">{{ site.description }}</p>
+                          </div>
+                      </div>
+                      <!-- End Slide 1 -->
+
+                      <!-- Begin Slide 2 -->
+                      <div class="item">
+                        <div class="mask"  style="background-color: hsla(0, 0%, 0%, 0.6)" ></div>
+                          <img src="../images/featured/home.jpg" height="400" alt="Image of second carousel">
+                          <div class="carousel-caption">
+                              <h3 class="carousel-title hidden-xs">FUERZA</h3>
+                              <p class="carousel-body">FUERZA</p>
+                          </div>
+                      </div>
+                      <!-- End Slide 2 -->
+
+                      <!-- Begin Slide 3 -->
+                      <div class="item">
+                        <div class="mask"  style="background-color: hsla(0, 0%, 0%, 0.6)" ></div>
+                          <img src="../images/featured/home.jpg" height="400" alt="Image of third carousel">
+                          <div class="carousel-caption">
+                              <h3 class="carousel-title hidden-xs">BELLEZA</h3>
+                              <p class="carousel-body">BELLEZA</p>
+                          </div>
+                      </div>
+
+                      <div class="item">
+                        <div class="mask"  style="background-color: hsla(0, 0%, 0%, 0.6)" ></div>
+                          <img src="../images/featured/home.jpg" height="400" alt="Image of third carousel">
+                          <div class="carousel-caption">
+                              <h3 class="carousel-title hidden-xs">CANDOR</h3>
+                              <p class="carousel-body">CANDOR</p>
+                          </div>
+                      </div>
+                      <!-- End Slide 4  -->
+                  </div>
+      
+                  <!-- Controls -->
+                  <a class="left carousel-control" href="#carousel-1" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                  </a>
+                  <a class="right carousel-control" href="#carousel-1" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                  </a>
+                  
+              </div>
+          </div>
+      </div>
+    </section>
+  </div>
 
 <!-- End #carousel-section -->
 
