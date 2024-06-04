@@ -8,47 +8,43 @@ title: Inicio
 
  <div style="font-size: 15px; line-height: 24px; background: #F8FAFF;">
 
-    <header class="page-header no-margin">
+    <!-- Header -->
+    <nav id="navbar-section" class="navbar navbar-default navbar-static-top navbar-sticky" role="navigation">
+      <div class="container">
+      
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-custom">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <a class="navbar-brand wow fadeInDownBig" href="index.html"><img class="office-logo" src="../assets/img/slider/Office.png" alt="Office"></a>      
+      </div>
 
-            <img
-              src="/static/img/nologo.png"
-              alt=""
-              width="30"
-              height="30"
-              class="d-inline-block align-text-top"
-            />
+      <div id="navbar-spy" class="collapse navbar-collapse navbar-responsive-collapse">
+        <ul class="nav navbar-nav pull-right">
+          <li class="active">
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/about.html">About</a>
+          </li>
+          <li>
+            <a href="/blog.html">Blog</a>
+          </li>
+          <li>
+            <a href="/team.html">Team</a>
+          </li>
+          <li>
+            <a href="/contact.html"><span>Contact</span></a>
+          </li>
+        </ul>         
+      </div>
+      </div>
+    </nav>
 
-            <h5 class="d-inline-block align-text-top text-white">
-              {{version.split(' ')[0] + ' ' + version.split(' ')[1]}}
-            </h5>
-
-          </a>
-          
-          <div class="container-fluid" style="display: flex; justify-content: flex-end; gap: 10px;" >
-
-          <a class="btn btn-light" href="/SOPORTE" role="button" style="text-decoration: none; display: flex; align-items: center; justify-content: center; padding: 0.5rem 1rem;">
-            <i class="fas fa-envelope-open-text" style="margin-right: 5px;"></i>
-          </a>
-
-          <a class="btn btn-light"  onclick="return confirmExit()" href="/logout" role="button" style="text-decoration: none; display: flex; align-items: center; justify-content: center; padding: 0.5rem 1rem;">
-            <i class="fas fa-door-open" style="margin-right: 5px;"></i>
-          </a>
-
-          <a class="btn btn-light" href="/" role="button" style="text-decoration: none; display: flex; align-items: center; justify-content: center; padding: 0.5rem 1rem;">
-            <i class="fas fa-home" style="margin-right: 5px;"></i>
-          </a>
-
-        </div>
-
-        </div>
-      </nav>
-
-    </header>
     <br>
 
     <section id="carousel-section" class="section-global-wrapper"> 
