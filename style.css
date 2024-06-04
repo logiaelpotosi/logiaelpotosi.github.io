@@ -65,3 +65,22 @@
   .carousel-control .fa {
     font-size: 2rem;
   }
+
+  .page-header {
+    position: fixed; /* O usa absolute si prefieres */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Asegúrate de que este valor sea mayor que el del carousel */
+    background: white; /* Añade un fondo para evitar que el contenido se mezcle */
+  }
+
+  /* Ajusta el margen superior del contenido para que no se superponga con el header */
+  .section-global-wrapper {
+    margin-top: 70px; /* Ajusta este valor según la altura de tu header */
+  }
+
+  .carousel-inner img {
+    width: 100%; /* Asegúrate de que las imágenes se escalen correctamente */
+    height: auto; /* Mantén la proporción de la imagen */
+  }
