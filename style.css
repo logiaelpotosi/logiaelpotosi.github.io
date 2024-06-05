@@ -95,27 +95,7 @@
   letter-spacing: 2px;
   padding-top: 0px;
 }
-.side-left{
-  background:#1c2683;
-  box-shadow: 3px grey;
-  color: white;
-  padding: 30px;
-  letter-spacing: .9px;
-}
-@media (min-width: 800px){ 
- 
-    .side-left{
-  height: 1248px;
-}
- }
-
  .office-logo {
-  width: 200px;
-}
-
-@media (max-width: 768px){ 
-    .office-logo{
-      height: 100px;
-      width: 100px;
-  }
+  height: 100px;
+  width: 100px;
 }
