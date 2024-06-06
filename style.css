@@ -1,28 +1,4 @@
 
-.section-global-wrapper {
-    position: relative;
-  }
-  .section-global-wrapper:before,
-.section-global-wrapper:after {
-  content: " ";
-  display: table;
-}
-.section-global-wrapper:after {
-  clear: both;
-}
-
-  .container-fluid-kamn {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .container-kamn {
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-
   /* Asegúrate de que los controles estén centrados verticalmente */
   .carousel-control {
     top: 50%;
