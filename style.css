@@ -110,7 +110,6 @@
   z-index: 1; 
 }
 
-
 .carousel-item {
   position: relative; /* Asegura que la máscara esté posicionada correctamente dentro del item */
 }
