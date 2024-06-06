@@ -1,4 +1,44 @@
 
+
+/*
+* ==========================================================================
+* Navbar
+* ==========================================================================
+*/
+
+.navbar {
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+}
+/*
+* ==========================================================================
+* Navbar Nav Links
+* ==========================================================================
+*/
+
+.navbar-brand {  
+  z-index: 9999px;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding-top: 0px;
+}
+.side-left{
+  background:#528C7C;
+  box-shadow: 3px grey;
+  color: white;
+  padding: 30px;
+  letter-spacing: .9px;
+}
+@media (min-width: 800px){ 
+ 
+    .side-left{
+  height: 1248px;
+}
+ }
+ 
 /**
  * Site footer
  */
@@ -109,6 +149,14 @@ a { text-decoration: none; }
    transition: all 250ms ease-in;
  }
 
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2,2,2,0.4);
+}
 
 a.button {
   display: table;
