@@ -1,36 +1,4 @@
 
-.carousel-caption .carousel-title {
-    color: #ffffff;
-  }
-  @media (min-width: 768px) and (max-width: 1199px) {
-    .carousel-caption {
-      font-size: 12px;
-      padding-bottom: 0px;
-      bottom: 2px;
-    }
-    .carousel-caption .carousel-title {
-      font-size: 18px;
-    }
-  }
-  @media (max-width: 767px) {
-    .carousel-caption {
-      font-size: 11px;
-      padding-bottom: 0;
-      bottom: 0;
-    }
-    .carousel-caption .carousel-title {
-      font-size: 14px;
-    }
-  }
-
-  .carousel-inner{
-    width:auto;
-    height: auto;
-  }
-
-  .glyphicon-lg{font-size:3em}
-
-
 .section-global-wrapper {
     position: relative;
   }
