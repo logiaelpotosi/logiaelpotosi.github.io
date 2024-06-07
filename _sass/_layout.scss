@@ -1,30 +1,4 @@
 
-
-/*
-* ==========================================================================
-* Navbar
-* ==========================================================================
-*/
-
-.navbar {
-  font-weight: bold;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-bottom: 0;
-}
-/*
-* ==========================================================================
-* Navbar Nav Links
-* ==========================================================================
-*/
-
-.navbar-brand {  
-  z-index: 9999px;
-  font-size: 28px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  padding-top: 0px;
-}
 .side-left{
   background:#528C7C;
   box-shadow: 3px grey;
@@ -191,7 +165,7 @@ div.text-box {
   display: block;
   margin: 1rem 0 $spacing-unit;
   padding: 0;
-  width: 100%;
+  width: auto;
   height: auto; /* Adjust this as needed */
   overflow: hidden;
 
