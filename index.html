@@ -105,7 +105,7 @@ title: Inicio
   <!-- Homepage events selection -->
   <section id="homepage-events">
     <ul class="events-index">
-      <a href="{{ '/events' | prepend: site.baseurl }}" title="{{ site.title | append: ' Events' }}">
+      <a href="{{ '/eventos' | prepend: site.baseurl }}" title="{{ site.title | append: ' Eventos' }}">
         <h2 class="home-header">Eventos</h2>
       </a>
       {% for event in site.eventos limit:3 %}
@@ -153,6 +153,28 @@ title: Inicio
 
     <a href="{{ '/eventos' | prepend: site.baseurl }}" title="{{ site.title | prepend: 'See All ' | append: ' Events' }}" class="button">TODOS LOS EVENTOS</a>
   </section><!-- End homepage events selection -->
+
+  <section >
+    <ul class="events-index">
+      <a>
+        <h2 class="home-header">SALMO 133</h2>
+      </a>
+
+
+      <li class="event">
+        
+       <p>"Mirad cuán bueno y cuán delicioso es
+        habitad los hermanos juntos y en armonía
+        es como el buen óleo sobre la cabeza,
+        el cual desciende sobre la barba,
+        la barba de Aarón y que baja hasta el borde de sus vestiduras como el rocío de Hermón, que desciende sobre los Montes de Sion,
+        pues ahí envía Jehová bendición y vida eterna."</p>
+      </li>
+
+    </ul>
+  </section><!-- End homepage issues selection -->
+
+  
   <!-- Homepage issues selection -->
   <section id="services-container" class="homepage-issues">
     <a href="{{ '/logias' | prepend: site.baseurl }}" title="{{ site.title | append: ' Issues' }}">
@@ -186,15 +208,6 @@ title: Inicio
   </section><!-- End homepage issues selection -->
   <br>
 
-  <p class="post-content collection-content">
-    SALMO 133<br>
-    "Mirad cuán bueno y cuán delicioso es
-    habitad los hermanos juntos y en armonía
-    es como el buen óleo sobre la cabeza,
-    el cual desciende sobre la barba,
-    la barba de Aarón y que baja hasta el borde de sus vestiduras como el rocío de Hermón, que desciende sobre los Montes de Sion,
-    pues ahí envía Jehová bendición y vida eterna."</p>
-  
   {% if site.email %}
 <!-- Contact form -->
 <section id="contact">
