@@ -3,7 +3,7 @@ layout: default
 title: Noticias y Publicaciones
 ---
 <!-- Blog / news index -->
-<ul class="post-list">
+<ul class="post-list" style=" margin-top: 120px;" >
   {% for post in paginator.posts %}
   <li>
     <a href="https://getpocket.com/save?url={{ post.url | prepend: site.baseurl | prepend: site.url }}&title={{ post.title }}" title="Save to Pocket" target="_blank">
