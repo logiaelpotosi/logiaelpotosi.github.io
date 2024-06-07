@@ -67,7 +67,7 @@
 .carousel,
 .carousel-inner,
 .carousel-item {
-  height: 800px; /* Altura completa de la ventana */
+  height: 700px; /* Altura completa de la ventana */
             min-height: 700px;
             background: no-repeat center center scroll;
             background-size: cover;
